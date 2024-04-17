@@ -1,0 +1,20 @@
+### Отправка метрик админ
+POST http://localhost:8081/metrics
+Authorization: Basic admin admin
+
+### Отправка метрик админ1
+POST http://localhost:8081/metrics
+Authorization: Basic admin1 admin1
+
+### Отправка метрик user
+POST http://localhost:8081/metrics
+Authorization: Basic user user
+
+### Запрос всех метрик
+GET http://localhost:8082/metrics
+
+### Запрос метрик по имени
+GET http://localhost:8082/metrics?name=jvm.memory.used
+
+### Запрос метрики по id
+GET http://localhost:8082/metrics/1
